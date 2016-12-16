@@ -25,13 +25,6 @@
       <li>item 7</li>
     </ol>
     <button id="b">The button</button>
-
-
-
-    <ol id="fib">
-    </ol>
-
-    <button id="b2">Fib</button>
     
     <script src="js.js"></script>
   </body>
