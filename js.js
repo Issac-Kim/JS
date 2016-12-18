@@ -37,19 +37,19 @@ button.addEventListener("click", addItem);
 
 //----------------------------------------------------------------------
 
-var calc = function(n, e){
+var calc = function(n){
     if (n == 0)
 	return 1;
     if (n == 1)
 	return 1;
-    return calc(n - 1, e) + calc(n - 2, e);
+    return calc(n - 1) + calc(n - 2);
 }
 
 var fib = function(e){
     var li = document.createElement("li");
     var ol = document.getElementById("fib");
-    console.log(ol.length);
-    li.innerHTML = calc(ol.length);
+    console.log(ol.children.length);
+    li.innerHTML = calc(ol.children.length);
     ol.appendChild(li);
 }
 
